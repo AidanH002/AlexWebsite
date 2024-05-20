@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaping Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+
+    <header>
+        <h1>Marshall's Lowcountry Landscaping</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <body>
+            <section id="about">
+            <h2>About Us</h2>
+            <p>
+                At Marshall's Lowcountry Landscaping, we take pride in offering premier lawnscaping services that elevate outdoor spaces to stunning new heights. With a commitment to excellence and a passion for creativity, we strive to exceed the expectations of our clients, transforming their landscapes into breathtaking retreats.
+            </p>
+
+            <p>
+                Our lawnscaping service is more than just mowing lawns and trimming hedges; it's about crafting personalized outdoor environments that reflect the unique style and preferences of each client. From lush green lawns to vibrant flower beds and elegant hardscape features, we design and create outdoor spaces that are both visually captivating and functional.
+            </p>
+
+            <p>
+                One of the key aspects that sets us apart is our dedication to serving our clients with the utmost care and attention to detail. We understand that every client has specific needs and desires when it comes to their outdoor space, which is why we take the time to listen and understand their vision. Our team of skilled landscapers works closely with each client, providing expert guidance and recommendations to bring their ideas to life.
+            </p>
+
+            <p>
+                Whether it's a complete landscape redesign or routine maintenance, we approach every project with professionalism and integrity. We use only the highest quality materials and equipment to ensure that each job is completed to the highest standard. Our meticulous attention to detail and commitment to excellence ensure that our clients are always satisfied with the results.
+            </p>
+
+            <p>
+                But our dedication to our clients goes beyond just the quality of our work. We understand that communication is key to a successful landscaping project, which is why we keep our clients informed every step of the way. From initial consultations to final walkthroughs, we make sure that our clients are involved in the process and are completely satisfied with the outcome.
+            </p>
+
+            <p>
+                At Marshall's Lowcountry Landscaping, we believe that the true measure of our success is the satisfaction of our clients. That's why we go above and beyond to exceed their expectations and deliver exceptional results on every project. Whether it's creating a serene backyard oasis or maintaining a pristine lawn, we are committed to providing our clients with the best lawnscaping services in the industry.
+            </p>
+
+            <p>
+                In addition to our exceptional landscaping services, we also offer unparalleled customer service. Our friendly and knowledgeable staff are always available to answer any questions or address any concerns that our clients may have. We believe in building long-lasting relationships with our clients based on trust, reliability, and exceptional service.
+            </p>
+
+            <p>
+                So if you're looking to transform your outdoor space into a beautiful and inviting retreat, look no further than Marshall's Lowcountry Landscaping. With our expert lawnscaping services and dedication to client satisfaction, we'll help you create the outdoor oasis of your dreams. Contact us today to schedule a consultation and see how we can bring your landscape vision to life.
+            </p>
+            <!-- You can add more information about your company here -->
+            </section>
+        </body>
+        
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-columns">
+                <ul>
+                    <li>Lawn Care</li>
+                    <li>Garden Design</li>
+                    <li>Trimming</li>
+                    <li>Planting</li>
+                    <li>Hedging</li>
+                    <!-- Add more services as needed -->
+                </ul>
+            </div>
+        </section>
+        
+             <!-- Google Maps code with circular geofence -->
+    <section>
+    <h2>Our Service Area</h2>         
+        <div id="map" style="height: 400px;"></div>
+        <script>
+            function initMap() {
+                // Center the map on Charleston, SC
+                var charleston = { lat: 32.78331756591797, lng: -79.93196105957031 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 11,
+                    center: charleston
+                });
+        
+                // Create a circle and set its center and radius
+                var circle = new google.maps.Circle({
+                    strokeColor: '#FF0000',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2,
+                    fillColor: '#FF0000',
+                    fillOpacity: 0.35,
+                    map: map,
+                    center: charleston,
+                    radius: 10000 // Radius in meters
+                });
+            }
+        </script>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmwrItm7ajawI6bM31M-nu0hPr_Rp7_fw&callback=initMap"></script>
+        <!-- End of Google Maps code -->
+    </section>
+    <script src="script.js"></script> <!-- Link to your JavaScript file for interactivity -->
+
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <!-- Add images of your landscaping projects here -->
+            <!-- You can use <img> tags for images -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you're interested in our services, feel free to contact us:</p>
+            <ul>
+                <li>Email: example@example.com</li>
+                <li>Phone: 123-456-7890</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marshall's Lowcountry Landscaping. All rights reserved.</p>
+    </footer>
+</body>
+</html>
